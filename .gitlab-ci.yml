@@ -7,7 +7,7 @@ stages:
     name: release
   variables:
     DOCKER_IMAGE_TAG: stable
-    NAMESPACE: zetabot
+    NAMESPACE: cargo
   only:
     - main
 
@@ -16,7 +16,7 @@ stages:
     name: development
   variables:
     DOCKER_IMAGE_TAG: latest
-    NAMESPACE: zetabot
+    NAMESPACE: cargo
   only:
     - develop
 
