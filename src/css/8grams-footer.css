@@ -1,14 +1,18 @@
 .footer-container {
-  background-color: #000;
-  color: #adb5bd;
+  background-color: #168241;
+  color: white;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  width: 100vw;
-  height: 100%;
-  padding-top: 42px;
-  padding-bottom: 64px;
+  width: 100%;
+  padding: 10px 66px;
+  
+}
+
+.col-1 {
+align-items: flex-start;
+padding: 10px 66px;
 }
 
 @media (max-width: 1200px) {

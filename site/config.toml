@@ -11,12 +11,12 @@ rssLimit = 4
     baseName = "rss"
 
 [Params]
-  pathUrl = 'blog'
+  pathUrl = ''
   author = "8grams"
   logo = "img/16x16.png"
   header = "8grams"
 
-  metaDescription = 'Investasi bisnis & properti semudah belanja online'
+  metaDescription = 'Makin dekat dengan anda,makin mudah ditemukan'
 
   facebook = "8grams.dev"
   instagram = "8grams.dev"
