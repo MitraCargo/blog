@@ -1,5 +1,5 @@
-.lx-header-container {
-  background-color: white;
+.mc-header-container {
+  background-color:#168241;
   height: 80px;
   position: fixed;
   top: 0;
@@ -12,7 +12,7 @@
   align-items: center;
 }
 
-.lx-header-container .main-container {
+.mc-header-container .main-container {
   height: 100%;
   width: 100%;
   max-width: 1140px;
@@ -22,14 +22,14 @@
   align-items: center;
 }
 
-.lx-header-right {
+.mc-header-right {
   display: flex;
   flex-direction: row;
   align-items: center;
   position: relative;
 }
 
-.lx-header-container a,
+.mc-header-container a,
 .dropdown {
   font-family: roboto, sans-serif !important;
   text-decoration: none;
@@ -37,7 +37,7 @@
   font-weight: 400;
 }
 
-.lx-logo {
+.mc-logo {
   cursor: pointer;
   width: auto;
   height: 30px;
@@ -45,14 +45,16 @@
   margin-right: 26px;
 }
 
-.lx-button {
-  color: #00c48f;
+.mc-button {
+  color: #ffffff;
   font-size: 16px;
   font-weight: 700;
   background-color: transparent;
+  outline: 1px solid #ffffff ;
+  padding: 12px;
 }
 
-.lx-item:hover {
+.mc-item:hover {
   color: #212529 !important;
 }
 
@@ -242,7 +244,7 @@
     display: none;
   }
 
-  .lx-header-container {
+  .mc-header-container {
     height: 70px;
   }
 
@@ -259,7 +261,7 @@
     padding: 0px 66px;
   }
 
-  .lx-logo {
+  .mc-logo {
     height: 20px !important;
     margin-right: 15px;
   }
