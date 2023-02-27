@@ -1,8 +1,8 @@
 baseurl = "/"
 languageCode = "en-us"
 languageLang = "en"
-title = "8grams"
-copyright = "2022 8grams All rights reserved"
+title = "Mitra Cargo"
+copyright = "2023 Mitra Cargo All rights reserved"
 rssLimit = 4
 
 [outputFormats]
@@ -12,14 +12,14 @@ rssLimit = 4
 
 [Params]
   pathUrl = 'blog'
-  author = "8grams"
+  author = "Admin"
   logo = "img/16x16.png"
-  header = "8grams"
+  header = "MitraCargo"
 
   metaDescription = 'Makin dekat dengan anda,makin mudah ditemukan'
 
-  facebook = "8grams.dev"
-  instagram = "8grams.dev"
+  facebook = "mitracargo.com"
+  instagram = "mitracargo.com"
 
 [taxonomies]
   tag = "tag"
