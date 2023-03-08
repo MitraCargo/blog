@@ -24,7 +24,7 @@
   }
 
   .information .category {
-    color: #F2994A;
+    color: #f2994a;
     font-size: 16px;
     font-weight: 500;
   }
@@ -34,25 +34,34 @@
   <h1 class="f2 lh-title b mb3 blog-title">{{.Title}}</h1>
 
   <div class="flex grey-3 information">
-    <div class="category">{{ range .Params.category }}{{ . }}{{ end }}</div>
-    <p style="color: #E0E0E0; margin-top: -3px;">•</p>
-    <p style="color: #3F3F3F">{{ .Date.Format "2 January 2006" }}</p>
-    <p style="color: #E0E0E0; margin-top: -3px;">•</p>
+    <div class="category">
+      {{ range .Params.category }}<a
+        href="{{$.Site.Params.pathUrl}}/category/{{. | urlize }}"
+        >#{{ . }} </a
+      >{{ end }}
+    </div>
+    <p style="color: #e0e0e0; margin-top: -3px">•</p>
+    <p style="color: #3f3f3f">{{ .Date.Format "2 January 2006" }}</p>
+    <p style="color: #e0e0e0; margin-top: -3px">•</p>
     <div
-      style="color: #3F3F3F; cursor: pointer"
+      style="color: #3f3f3f; cursor: pointer"
       onclick="window.location.href = '/blog/author/{{.Params.author | urlize}}'"
     >
       Author: {{.Params.author}}
     </div>
-    <p style="color: #E0E0E0; margin-top: -3px;">•</p>
-    <p style="color: #3F3F3F">{{ .ReadingTime }} Min Read</p>
+    <p style="color: #e0e0e0; margin-top: -3px">•</p>
+    <p style="color: #3f3f3f">{{ .ReadingTime }} Min Read</p>
   </div>
 
   <div class="cms mw7 center">
     {{if .Params.image}} {{if in .Params.image "http"}}
-    <img src="{{.Params.image}}" class="image"  alt="{{.Params.image.alt}}" />
+    <img src="{{.Params.image}}" class="image" alt="{{.Params.image.alt}}" />
     {{else}}
-    <img src="{{.Site.Params.pathUrl}}/{{.Params.image}}" class="image"  alt="{{.Params.featuredImage.alt}}" />
+    <img
+      src="{{.Site.Params.pathUrl}}/{{.Params.image}}"
+      class="image"
+      alt="{{.Params.featuredImage.alt}}"
+    />
     {{end}} {{else if .Params.featuredImage.src}} {{if in
     .Params.featuredImage.src "http"}}
     <img
