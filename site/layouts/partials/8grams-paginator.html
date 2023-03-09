@@ -4,15 +4,15 @@
   {{ if .Paginator.HasPrev }}
   <a title='Previous Page' href="/{{.Site.Params.pathUrl}}{{ .Paginator.Prev.URL }}">
     <i class="fas fa-arrow-left"></i>
-    <span>Previous</span>
+    <span>Sebelumnya</span>
   </a>
   {{ else }}
   <div>&nbsp;</div>
   {{ end }}
 
   {{ if .Paginator.HasNext }}
-  <a title='Previous Page' href="/{{.Site.Params.pathUrl}}{{ .Paginator.Next.URL }}">
-    <span>Next</span>
+  <a title='Next Page' href="/{{.Site.Params.pathUrl}}{{ .Paginator.Next.URL }}">
+    <span>Selanjutnya</span>
     <i class="fas fa-arrow-right"></i>
   </a>
   {{ else }}
