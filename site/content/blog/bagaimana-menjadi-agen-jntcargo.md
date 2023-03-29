@@ -15,7 +15,7 @@ category:
 featuredImage:
   title: Bagaimana menjadi agen J&T Cargo
   alt: Bagaimana menjadi agen J&T Cargo
-  src: img/jnt-cargo.jpg
+  src: img/agen-jnt-cargo.jpg
 ---
 
 J&T Cargo adalah bagian dari J&T, perusahaan pengiriman barang yang berasal dari Indonesia. Perusahaan ini didirikan pada tahun 2015 dan telah berkembang menjadi salah satu perusahaan pengiriman terbesar di Asia Tenggara. J&T Cargo menawarkan pengiriman kargo.
